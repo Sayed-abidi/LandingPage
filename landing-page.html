@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    #logo{
+        margin-top: 25px;
+        color: rgb(206, 59, 128);
+        margin-left: 390px;
+      }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        background:linear-gradient(#000e2e, #004f5a);
+
+
+
+    }
+
+    .navbar ul {
+        color: white;
+        display: flex;
+        margin: 19px 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    li:hover {
+        background-color:  wheat;
+        color:  black;
+    }
+
+    .navbar li {
+        border-radius: 20px;
+        border: 5px;
+        padding: 5px;
+        margin: 5px 30px;
+        display: flex;
+        text-decoration: none;
+    }
+
+    .navbar img {
+        height: 50px;
+        border-radius: 10px;
+        margin: 10px;
+
+    }
+
+    .navbtn {
+        border-radius: 20px;
+        height: 40px;
+        margin: 20px;
+        float: right;
+        width: 100px;
+        border: 2px solid rgba(8, 206, 255, 0.904);
+        background-color: white;
+        cursor: pointer;
+    }
+
+    #btn2 {
+        cursor: pointer;
+        background-color: rgba(8, 206, 255, 0.904);
+        width: 150px;
+    }
+
+    .main {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background:linear-gradient(#000e2e, #004f5a);
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        justify-content: center;
+        margin-top: 0px;
+    }
+
+    .main-item {}
+
+    .main h1 {
+        color: white;
+        padding: 30px;
+
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        margin-top: 45px;
+    }
+
+    .flex-item {
+
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        /* margin: auto; */
+        width: 250px;
+        height: 360px;
+        border: none;
+        margin-top: 50px;
+        padding: 20px;
+        text-align: justify;
+    }
+
+    #center-itm {
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        /* margin: auto; */
+        width: 250px;
+        height: 350px;
+        border: none;
+        margin-top: 0px;
+        padding: 20px;
+        text-align: justify;
+
+    }
+
+    .flex-item h1 {
+        color: rgb(206, 59, 128);
+        font-size: 70px;
+        display: inline;
+
+    }
+
+    .flex-item p {
+        display: inline;
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    span {
+        color: rgb(206, 80, 153);
+    }
+
+    .center {
+        width: 100%;
+        height: 100vh;
+        /* border: 1px solid black; */
+        background: linear-gradient(to right, #fafafa, #defcf9, #77d3eb);
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .center-item {
+        text-align: center;
+        justify-content: center;
+        width: 50vh;
+        height: 50vh;
+        /* border: 1px solid black; */
+        margin-top: 40px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .center-item input {
+        border-radius: 10px;
+        padding: 15px;
+        width: 100%;
+        margin: 10px;
+        border: 2px solid rgb(206, 59, 128);
+    }
+
+    .center-item button {
+        background-color: rgb(206, 59, 128);
+        color: rgb(247, 243, 243);
+        padding: 10px;
+        width: 170px;
+        border-radius: 20px;
+        border: none;
+        margin-top: 15px;
+        margin-right: 130px;
+    }
+    .center-item h1{
+        justify-content: left;
+        font-size: 40px;
+     }
+    .center-item p{
+        justify-content: left;
+        font-size: 25px;
+    }
+    .center-item img{
+        height: 70px;
+    }
+    .client-section{
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        width: 100%;
+        height: 40vh;
+        padding: 50px;
+     }
+     .client-item{
+        display: flex;
+        justify-content: center;
+     }
+    .client-item img{
+         height: 100px;
+         margin: 0px 60px;
+ 
+    }
+    .client-section h1{
+        font-family: 'Josefin Sans', sans-serif;
+
+        padding: 20px;
+
+    }
+    .img{
+        /* border: 1px solid black; */
+    }
+    span{
+        color: rgba(8, 206, 255, 0.904);
+    }
+    .parkingpackage{
+        padding: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        width: 100%;
+        height: 70%;
+         background-color: rgba(190, 239, 252, 0.904);
+        margin-top: 20px;
+    }
+    .parkingpackage h1{
+        font-family: 'Josefin Sans', sans-serif;
+        padding: 30px;
+
+    }
+    .packages img{
+        height: 100px;
+        
+    }
+    .packages{
+        justify-content: center;
+        justify-content: space-around;
+        display: flex;
+     }
+     .packages2{
+      font-family: 'Josefin Sans', sans-serif;
+        margin-top: 40px;
+        justify-content: center;
+        justify-content: space-around;
+        display: flex;
+     }
+        .packages2 img{
+        height: 100px;
+        
+        
+    }
+    .secondlast-footer{
+        font-family: 'Josefin Sans', sans-serif;
+
+        width: 100%;
+        height: 50%;
+         display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 30px;
+    }
+    .sf-item{
+        margin-top: 45px;
+        text-align: center;
+        width: 40vw;
+        height: 30%;
+        margin-left: 30px;
+ 
+     }
+     .sf-item button{
+        background-color: rgb(206, 59, 128);
+        color: rgb(247, 243, 243);
+        padding: 10px;
+        width: 170px;
+        border-radius: 20px;
+        border: none;
+        margin-top: 15px;
+        margin-right: 130px;
+
+     }
+     #sf-one{
+        margin-left: 90px;
+     }
+     .footer{
+        justify-content: center;
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        border: 2px solid black;
+        font-family: 'Josefin Sans', sans-serif;
+        justify-content: space-around;
+        background:linear-gradient(#000e2e, #004f5a);
+        color: white;
+
+     }
+     .footer-item1 img{
+        margin: 20px 5px;
+        height: 20px;
+     }
+     .footer-item1{
+        margin-top: 80px;
+     }
+     .footer-item1 li{
+        text-decoration: none;
+        
+     }
+    .spn{
+        color: rgb(204, 32, 89);
+    }
+     
+</style>
+
+<body>
+    <div class="navbar">
+
+        <img src="webicon.jpg" alt="">
+        <ul>
+            <li><b> Services</b></li>
+            <LI><b>About</b></LI>
+            <LI><b>Blogs</b></LI>
+        </ul>
+        <button class="navbtn">Login</button>
+        <button class="navbtn" id="btn2">Book a Demo</button>
+        <h2 id="logo">HONK</h2>
+    </div>
+    <div class="center">
+
+        <div class="center-item">
+            <h1>Your <span>  all-in-one </span> platform for parking lot management.</h1><br><br><br>
+            <p>Drive up revenue while driving down costs with HONK’s payment platform. Whether you operate a gated
+                garage or surface lot, sell daily or monthly parking, HONK has the solution for you.</p>  
+                <img src="tablet-pc-mobile-phone-notebook-260nw-122362357.webp" alt="">
+        </div>
+        <div class="center-item" id="form-item">
+            <form action="">
+                <input type="text" placeholder="Enter Name">
+                <input type="text" placeholder="Enter EmailId">
+                <input type="number" placeholder="Enter Phone">
+                <input type="text" placeholder="Enter Country">
+                <input type="text" placeholder="How Can We Help You ?">
+                <button>Book a Demo</button>
+            </form>
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="main-item">
+            <h1>Don't just take your words for it. <br>Here what our costumer have to say.</h1>
+        </div>
+        <div class="flex">
+            <div class="flex-item">
+                <h1>"</h1><br>
+                <p><span class="=spn"> <b> There was minimal effort </b></span>and capital investment needed to set it up, and the
+                    numbers speak for
+                    themselves. Now drivers can pay for <span class="=spn"><b> parking </b></span> from their phone without <span><b>
+                            downloading an app </b></span>.
+
+                </p> <br><br>
+                <h4>AllPro Parking <br>
+                    William Rasi <br>
+                    General Manager</h4>
+            </div>
+            <div class="flex-item" id="center-itm">
+                <h1>"</h1><br>
+                <p>Commuters,<span class="=spn" class="=spn"> <b> visitors and residents</b></span> of Richmond have access to the safest way to
+                    pay for parking.
+                    Replacing our pay stations with Honk’s tap-to-pay technology was <span><b> such a quick and easy
+                            process.</b></span></p><br>
+                <br>
+                <h4>City Parking Inc. <br>
+                    David Sharrar <br>
+                    President, CEO</h4>
+            </div>
+            <div class="flex-item">
+                <h1>"</h1><br>
+                <p>The coronavirus <span class="=spn"> <b> pandemic has accelerated the need for digitized,</b></span> touch-free
+                    parking payments. Since
+                    adding Honk payment options on July 1st,<span><b> usage has skyrocketed and received positive
+                            feedback.</b> </span></p><br>
+                <br>
+                <h4>Port Jefferson <br>
+                    Kevin Wood <br>
+                    Parking Administrator</h4>
+            </div>
+        </div>
+    </div>
+    <div class="client-section">
+        <h1>HONK is trusted by</h1>
+        <div class="client-item">
+        <div class="img">  <img src="images (1).jpg" alt=""></div>   
+          <div class="img"><img src="images (2).jpg" alt=""></div>   
+            <div class="img"><img src="images (3).jpg" alt=""></div> 
+         <div class="img"><img src="images (4).jpg" alt=""></div>    
+            <div class="img"><img src="images (6).jpg" alt=""></div> 
+             <div class="img"><img src="images (7).jpg" alt=""></div> 
+        </div>
+    </div>
+    <div class="parkingpackage">
+        <h1>We've got the complete parking package</h1>
+        <div class="packages">
+            <div class="icon"><img src="icon-1.png" alt=""> <h3>On-demand <br> parking</h3></div> 
+            <div class="icon"><img src="icon-2.png" alt=""><h3>Reservation</h3></div> 
+            <div class="icon"><img src="icon-3.png" alt=""><h3>Promo <br>codes& validation</h3></div> 
+             <div class="icon"><img src="icon-4.png" alt=""><h3>Flex Pass</h3></div>  
+           
+        </div>
+        <div class="packages2">
+                        <div class="icon"><img src="icon-5.png" alt=""><h3>Permits</h3></div> 
+            <div class="icon"><img src="icon-6.png" alt=""><h3>Paid EV <br>Charging</h3></div> 
+            <div class="icon"><img src="icon-7.png" alt=""><h3>Self Managed <br>Price</h3></div> 
+            <div class="icon"><img src="icon-8.png" alt=""><h3>Business <br>Ideas</h3></div>
+        </div>
+    </div>
+    <div class="secondlast-footer">
+        <div class="sf-item" id="sf-one"><h1>Drive uo revenue with HONK. <br>Book a demo today!</h1>
+        <p>Add touch free payments to your parking.</p>
+        <button>Book a Demo</button>
+    </div>
+        <div class="sf-item"> <img style=" border-radius: 10px;" src="webicon.jpg" height="200px" alt=""></div>
+
+    </div>
+    <div class="footer">
+        <div class="footer-item1">
+            <h3>Follow Us</h3>
+            <img src="whatsapp (1).png" alt="">
+            <img src="instagram (1).png" alt="">
+            <img src="twitter.png" alt="">
+            <img src="youtube.png" alt="">
+        </div>
+        <div class="footer-item1">
+             <ul>
+                <li>About</li>
+                <li>Our Product</li>
+                <li>Feature</li>
+                <li>Careers</li>
+            </ul>
+
+        </div>
+        <div class="footer-item1">
+            <ul>
+                <li>Contact</li>
+                <li>Blogs</li>
+                <li>Album</li>
+                <li>Alumnies</li>
+            </ul>
+        </div>
+        <div class="footer-item1">
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms and conditions</li>
+                <li>Refunds</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
